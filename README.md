@@ -40,6 +40,8 @@ ESPHome config file: [`firmware/ac400.yaml`](firmware/AC400.yaml)
 
 Flash it with ESPHome and add the device to Home Assistant.
 
+Dashboard Configuration Example: [`dashbaord code.yaml`](dashbaord code.yaml) 
+
 ---
 
 ## 📷 Wiring diagram
