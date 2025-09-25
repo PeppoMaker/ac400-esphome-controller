@@ -22,6 +22,7 @@ Replacement of the original **Record Power AC400** controller with a **LilyGo T-
 ## 🔧 Hardware required
 
 - [LilyGo T-Relay ESP32 5V](https://lilygo.cc/products/t-relay)
+  <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/ef0c713e-f844-42cb-9574-a5446ba7de8e" />
 - [LILYGO TTGO T-U2T USB to TTL](https://lilygo.cc/products/t-u2t)
 - 5V DC power supply (≥1A recommended)
 - 2–5A fuse (fast/slow depending on motor spec)
