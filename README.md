@@ -30,8 +30,6 @@ Replacement of the original **Record Power AC400** controller with a **LilyGo T-
   <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/2c5a5989-8cd7-47a5-a2c8-fc181a68ce1b" />
 
 - 5V DC power supply (≥1A recommended)
-- 2–5A fuse (fast/slow depending on motor spec)
-- RC snubber or MOV surge protection across relays
 - Proper cabling (1–1.5 mm² for mains)
 
 ---
