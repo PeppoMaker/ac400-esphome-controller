@@ -1,0 +1,35 @@
+type: vertical-stack
+cards:
+  - type: custom:mushroom-title-card
+    title: AC400-ESPHome
+    grid-area: Control
+    card_mod: null
+  - type: custom:vertical-stack-in-card
+    horizontal: true
+    cards:
+      - type: custom:mushroom-light-card
+        entity: fan.t_relay_ac400_fan
+        icon: mdi:fan
+        name: AC400
+        tap_action:
+          action: more-info
+  - type: horizontal-stack
+    cards:
+      - type: picture-elements
+        entity: fan.t_relay_ac400_fan
+        state_image:
+          "on": /local/image/RecordPowerAC400-on.gif
+          "off": /local/image/RecordPowerAC400-off.png
+          style:
+            width: 300px
+            height: 200px
+            background-size: contain
+            background-position: center
+            background-repeat: no-repeat
+        elements:
+          - type: state-icon
+            entity: fan.t_relay_ac400_fan
+            icon: "no"
+            style:
+              top: 45%
+              left: 40%
