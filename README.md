@@ -42,7 +42,7 @@ Flash it with ESPHome and add the device to Home Assistant.
 
 Dashboard Configuration file: [`dashboard_code/dashboard-code.yaml`](dashboard_code/dashboard-code.yaml) 
 
-Here a couple of screens on HomeAssistant Dashboard layout:
+Here are a couple of screenshots of the Home Assistant Dashboard layout:
 
 <img width="200" height="198" alt="image" src="https://github.com/user-attachments/assets/136a4cfb-e62b-4370-860a-62406bb357a7" />
 <img width="195" height="200" alt="image" src="https://github.com/user-attachments/assets/08bbe884-ff25-4dc8-a8e6-d824a3d25218" />
