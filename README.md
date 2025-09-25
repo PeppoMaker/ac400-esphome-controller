@@ -79,5 +79,5 @@ On the LilyGo T-Relay each relay has 3 pins: COM, NO (Normally Open), NC (Normal
 
 ## 📜 License
 
-MIT License [`MIT License`](LICENSE)
+[`MIT License`](LICENSE)
 
