@@ -44,6 +44,7 @@ Dashboard Configuration file: [`dashboard_code/dashboard-code.yaml`](dashboard_c
 
 <img width="100" height="98" alt="image" src="https://github.com/user-attachments/assets/136a4cfb-e62b-4370-860a-62406bb357a7" />
 <img width="95" height="100" alt="image" src="https://github.com/user-attachments/assets/08bbe884-ff25-4dc8-a8e6-d824a3d25218" />
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/11398a4b-b73e-4d40-9195-d80244af2247" />
 
 
 
