@@ -23,11 +23,11 @@ Replacement of the original **Record Power AC400** controller with a **LilyGo T-
 
 - [LilyGo T-Relay ESP32 5V](https://lilygo.cc/products/t-relay)
 
-   <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/ef0c713e-f844-42cb-9574-a5446ba7de8e" />
+   <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/ef0c713e-f844-42cb-9574-a5446ba7de8e" />
  
 - [LILYGO TTGO T-U2T USB to TTL](https://lilygo.cc/products/t-u2t)
 
-  <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/2c5a5989-8cd7-47a5-a2c8-fc181a68ce1b" />
+  <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/2c5a5989-8cd7-47a5-a2c8-fc181a68ce1b" />
 
 - 5V DC power supply (≥1A recommended)
 - Proper cabling (1–1.5 mm² for mains)
