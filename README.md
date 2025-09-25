@@ -48,9 +48,8 @@ Here are a couple of screenshots of the Home Assistant Dashboard layout:
 <img width="195" height="200" alt="image" src="https://github.com/user-attachments/assets/08bbe884-ff25-4dc8-a8e6-d824a3d25218" />
 
 
-<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/3ec18d62-8a63-4dcf-ba92-8fd17e14e090" />
-![]([https://github.com/Your_Repository_Name/Your_GIF_Name.gif](https://github.com/user-attachments/assets/3ec18d62-8a63-4dcf-ba92-8fd17e14e090))
 
+![]([https://github.com/Your_Repository_Name/Your_GIF_Name.gif](https://github.com/user-attachments/assets/3ec18d62-8a63-4dcf-ba92-8fd17e14e090))
 
 ---
 
