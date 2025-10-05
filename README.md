@@ -2,6 +2,9 @@
 
 Replacement of the original **Record Power AC400** controller with a **LilyGo T-Relay ESP32** board, fully integrated with **ESPHome + Home Assistant**.
 
+<img width="474" height="474" alt="image" src="https://github.com/user-attachments/assets/dea9ec28-b46a-47d6-8466-5dcb2fcc58c6" />
+
+
 ## ⚠️ Disclaimer
 
 - This project involves working with **230V AC mains voltage** ⚡.  
