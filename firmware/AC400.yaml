@@ -88,7 +88,58 @@ script:
       - switch.turn_off: rel_med
       - switch.turn_off: rel_high
 
-# --- Single fan entity exposed to Home Assistant ---
+# --- Auto-off timer configuration ---
+# Exposed to Home Assistant as a number (0–120 minutes)
+number:
+  - platform: template
+    name: "AC400 Auto-Off Timer"
+    id: auto_off_timer
+    optimistic: true
+    min_value: 0
+    max_value: 120
+    step: 5
+    unit_of_measurement: "min"
+
+# --- Scripts ---
+script:
+  - id: set_speed_low
+    then:
+      - switch.turn_on: rel_low
+      - switch.turn_off: rel_med
+      - switch.turn_off: rel_high
+
+  - id: set_speed_med
+    then:
+      - switch.turn_off: rel_low
+      - switch.turn_on: rel_med
+      - switch.turn_off: rel_high
+
+  - id: set_speed_high
+    then:
+      - switch.turn_off: rel_low
+      - switch.turn_off: rel_med
+      - switch.turn_on: rel_high
+
+  - id: set_speed_off
+    then:
+      - switch.turn_off: rel_low
+      - switch.turn_off: rel_med
+      - switch.turn_off: rel_high
+
+  # Auto shutdown script (runs in background, restarts if triggered again)
+  - id: auto_shutdown
+    mode: restart
+    parameters:
+      minutes: int
+    then:
+      - if:
+          condition:
+            lambda: "return minutes > 0;"
+          then:
+            - delay: !lambda "return (minutes * 60000);"
+            - fan.turn_off: ac400_fan
+
+# --- Fan entity ---
 fan:
   - platform: template
     name: "AC400 Fan"
@@ -96,8 +147,12 @@ fan:
     speed_count: 3
 
     on_turn_on:
-      # Start in OFF state, user must select a speed
+      # Default state is OFF, user must select speed
       - script.execute: set_speed_off
+      # Start auto shutdown timer with current value
+      - script.execute:
+          id: auto_shutdown
+          minutes: !lambda "return (int)id(auto_off_timer).state;"
 
     on_turn_off:
       - script.execute: set_speed_off
@@ -111,7 +166,6 @@ fan:
           } else if (x == 3) {
             id(set_speed_high).execute();
           }
-
 # --- Utility buttons ---
 button:
   - platform: restart
