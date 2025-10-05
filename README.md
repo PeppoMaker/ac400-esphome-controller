@@ -47,8 +47,9 @@ Dashboard Configuration file: [`dashboard_code/dashboard-code.yaml`](dashboard_c
 
 Here are a couple of screenshots of the Home Assistant Dashboard layout:
 
-<img width="200" height="198" alt="image" src="https://github.com/user-attachments/assets/136a4cfb-e62b-4370-860a-62406bb357a7" />
-<img width="195" height="200" alt="image" src="https://github.com/user-attachments/assets/08bbe884-ff25-4dc8-a8e6-d824a3d25218" />
+<img width="502" height="673" alt="image" src="https://github.com/user-attachments/assets/82eab40c-1eaa-4125-b9a6-93c9d8a7ed89" />
+
+<img width="933" height="641" alt="image" src="https://github.com/user-attachments/assets/a0a1898f-e8b8-457f-9a53-fafebf024910" />
 
 ---
 
