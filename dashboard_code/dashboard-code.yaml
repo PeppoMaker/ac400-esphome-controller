@@ -5,16 +5,20 @@ cards:
     grid-area: Control
     card_mod: null
   - type: custom:vertical-stack-in-card
-    horizontal: true
+    horizontal: false
     cards:
       - type: custom:mushroom-light-card
         entity: fan.t_relay_ac400_fan
         icon: mdi:fan
-        name: AC400
+        name: AC400-ESPHome
         tap_action:
           action: more-info
-  - type: horizontal-stack
-    cards:
+      - type: entities
+        entities:
+          - entity: number.t_relay_ac400_auto_off_timer
+            name: Auto-Off Timer (min)
+            icon: "false"
+        alignment: end
       - type: picture-elements
         entity: fan.t_relay_ac400_fan
         state_image:
@@ -33,3 +37,10 @@ cards:
             style:
               top: 45%
               left: 40%
+        card-mod:
+          style: |
+            ha-card {
+              box-shadow: none !mportant;
+              border: none !mportant;
+              padding-right: 20px;
+            }
